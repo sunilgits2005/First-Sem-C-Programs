@@ -37,7 +37,21 @@ sum +=  (1.0 / j);
 printf("Sum: %.4f\n", sum);
 break;
 
-case 3: // NOT ATTEMPTED
+case 3:
+char e;
+printf("Enter an uppercase letter (A-Z): ");
+scanf(" %c", &e);
+for (int i = 0; i <= e - 'A'; i++)
+{
+for (int j = 'A'; j <= e - i; j++)
+printf("%c ", j);
+for (int k = 0; k < i * 2 - 1; k++)
+printf("  ");
+for (int l = e - i; l >= 'A'; l--)
+if (l != e)
+printf("%c ", l);
+printf("\n");
+}
 break;
 
 default:
