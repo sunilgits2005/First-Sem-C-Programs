@@ -13,7 +13,8 @@ scanf("%d", &a[i]);
 }
 
 printf("The integers are: ");
-for (i = 0; i < n; i++) {
+for (i = 0; i < n; i++)
+{
 printf("%d ", a[i]);
 }
 printf("\n");
