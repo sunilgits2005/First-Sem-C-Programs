@@ -30,9 +30,9 @@ int m;
 float sum = 0;
 printf("Enter n terms of the series:");
 scanf("%d", &m);
-for (int j = 1; j <= m; j += 2)
+for (int f = 1; f <= m; f += 2)
 {
-sum +=  (1.0 / j);
+sum +=  (1.0 / f);
 }
 printf("Sum: %.4f\n", sum);
 break;
