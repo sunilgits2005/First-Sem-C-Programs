@@ -14,13 +14,13 @@ switch(c)
 {
 
 case 1:
-int a = 0, b = 1, c, n = 10;
+int a = 0, b = 1, d, n = 10;
 for(int i = 0; i < n; i++)
 {
 printf("%d ",a);
-c = a + b;
+d = a + b;
 a = b;
-b = c;
+b = d;
 }
 printf("\n");
 break;
