@@ -6,7 +6,7 @@ int c;
 printf("\nEnter your choice:\n");
 printf("1. Print a fibonacci series upto a range of 10 numbers\n");
 printf("2. Print sum of the reciprocal of odd numbers upto n terms\n");
-printf("3. Print a cool pattern\n");
+printf("3. Print a cool pattern with Alphabets\n");
 printf("Choice:\n");
 scanf("%d", &c);
 
