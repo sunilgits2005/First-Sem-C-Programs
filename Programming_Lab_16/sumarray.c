@@ -1,26 +1,22 @@
-#include <stdio.h>
-void sum_of_array(int a[], int s, int sum[])
+#include<stdio.h>
+void sum_of_arr(int a[],int m)
 {
-    sum[0] = 0;
-    for (int i = 0; i < s; i++)
-    {
-        sum[0] += a[i];
-    }
+int sum = 0, i;
+for(i = 0; i < m; i++)
+{
+sum = sum + a[i];
 }
-
+printf("Sum of the array: %d \n",sum);
+}
 int main()
 {
-    int s;
-    printf("Enter the number of elements in the array: ");
-    scanf("%d", &s);
-    int a[s];
-    printf("Enter the elements of the array:\n");
-    for (int i = 0; i < s; i++)
-    {
-        scanf("%d", &a[i]);
-    }
-    int sum[1];
-    sum_of_array(a, s, sum);
-    printf("The sum of the array elements is: %d\n", sum[0]);
+int m,i;
+printf("Enter the size of the array: ");
+scanf("%d",&m);
+int a[m];
+printf("Enter the elements of the array: ");
+for(i = 0; i < m; i++)
+scanf("%d",&a[i]);
+sum_of_arr(a,m);
 }
 
